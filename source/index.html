@@ -114,55 +114,64 @@
 
     <section class="slider">
       <h2 class="slider__title">Номера</h2>
-      <ul class="slider__slides" aria-label="Выберите ваш.">
+      <ul class="slider__list" aria-label="Выберите ваш.">
         <li class="slider__slide">
-          <p class="slider__slide-title">Эконом плюс</p>
-          <ul class="slider-slide-list">
-            <li class="slider__slide-item">
-              <p class="slider__slide-text">Площадь - 0,90 м2</p>
-            </li>
-            <li class="slider__slide-item">
-              <p class="slider__slide-text">Размеры (ШхГхВ) — 90х100х180 см</p>
-            </li>
-            <li class="slider__slide-item">
-              <p class="slider__slide-text">Цена за сутки: 200₽</p>
-            </li>
-          </ul>
-          <button class="slider__slide-btn btn">Забронировать</button>
+          <img class="slider__img" src="https://via.placeholder.com/290x192?text=Картинка" alt="Котик">
+          <div class="slider__text-wrapper">
+            <p class="slider__slide-title">Эконом плюс</p>
+            <ul class="slider__slide-list">
+              <li class="slider__slide-item slider__slide-item--marker">
+                <p class="slider__slide-text">Площадь - 0,90 м2</p>
+              </li>
+              <li class="slider__slide-item slider__slide-item--marker">
+                <p class="slider__slide-text">Размеры (ШхГхВ) 90х100х180 см</p>
+              </li>
+              <li class="slider__slide-item slider__slide-item--marker">
+                <p class="slider__slide-text">Цена за сутки: 200₽</p>
+              </li>
+            </ul>
+            <a class="slider__slide-btn btn">Забронировать</a>
+          </div>
         </li>
-        <li class="slider__slide">
-          <p class="slider__slide-title">Комфорт</p>
-          <ul class="slider-slide-list">
-            <li class="slider__slide-item">
-              <p class="slider__slide-text">Площадь - 1,13 м2</p>
-            </li>
-            <li class="slider__slide-item">
-              <p class="slider__slide-text">Размеры (ШхГхВ) - 100х125х180 см</p>
-            </li>
-            <li class="slider__slide-item">
-              <p class="slider__slide-text">Цена за сутки: 250₽</p>
-            </li>
-          </ul>
-          <button class="slider__slide-btn btn">Забронировать</button>
+        <li class="slider__slide visually-hidden">
+          <img class="slider__img" src="https://via.placeholder.com/290x192?text=Картинка" alt="Котик">
+          <div class="slider__text-wrapper">
+            <p class="slider__slide-title">Комфорт</p>
+            <ul class="slider__slide-list">
+              <li class="slider__slide-item slider__slide-item--marker">
+                <p class="slider__slide-text">Площадь - 1,13 м2</p>
+              </li>
+              <li class="slider__slide-item slider__slide-item--marker">
+                <p class="slider__slide-text">Размеры (ШхГхВ) - 100х125х180 см</p>
+              </li>
+              <li class="slider__slide-item slider__slide-item--marker">
+                <p class="slider__slide-text">Цена за сутки: 250₽</p>
+              </li>
+            </ul>
+            <a class="slider__slide-btn btn">Забронировать</a>
+          </div>
         </li>
-        <li class="slider__slide">
-          <p class="slider__slide-title">Сьют</p>
-          <ul class="slider-slide-list">
-            <li class="slider__slide-item">
-              <p class="slider__slide-text">Площадь - 1,56 м2</p>
-            </li>
-            <li class="slider__slide-item">
-              <p class="slider__slide-text">Размеры (ШхГхВ) - 125х125х180 см</p>
-            </li>
-            <li class="slider__slide-item">
-              <p class="slider__slide-text">Цена за сутки: 350₽</p>
-            </li>
-          </ul>
-          <button class="slider__slide-btn btn">Забронировать</button>
+        <li class="slider__slide visually-hidden">
+          <img class="slider__img" src="https://via.placeholder.com/290x192?text=Картинка" alt="Котик">
+          <div class="slider__text-wrapper">
+            <p class="slider__slide-title">Сьют</p>
+            <ul class="slider__slide-list">
+              <li class="slider__slide-item slider__slide-item--marker">
+                <p class="slider__slide-text">Площадь - 1,56 м2</p>
+              </li>
+              <li class="slider__slide-item slider__slide-item--marker">
+                <p class="slider__slide-text">Размеры (ШхГхВ) - 125х125х180 см</p>
+              </li>
+              <li class="slider__slide-item slider__slide-item--marker">
+                <p class="slider__slide-text">Цена за сутки: 350₽</p>
+              </li>
+            </ul>
+            <a class="slider__slide-btn btn">Забронировать</a>
+          </div>
         </li>
       </ul>
 
-      <ul class="slider__nav" aria-label="Следующий или предыдущий номер.">
+      <ul class="slider__nav visually-hidden" aria-label="Следующий или предыдущий номер.">
         <li class="slider__nav-item">
           <button class="slider__nav-button" type="button" aria-label="Предыдущий номер."></button>
         </li>
@@ -173,7 +182,7 @@
 
       <ul class="slider__dots" aria-label="Навигация по номерам.">
         <li class="slider__dots-item">
-          <button class="slider__dot" type="button" aria-label="К номеру 1."></button>
+          <button class="slider__dot slider__dot--active" type="button" aria-label="К номеру 1."></button>
         </li>
         <li class="slider__dots-item">
           <button class="slider__dot" type="button" aria-label="К номеру 2."></button>
@@ -186,27 +195,27 @@
 
     <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>
-      <ul class="reviews__slides" aria-label="Вот что пишут наши клиенты.">
-        <li class="reviews__slide">
-          <p class="reviews__client-name">Валерия Гришаева</p>
+      <ul class="reviews__list" aria-label="Вот что пишут наши клиенты.">
+        <li class="reviews__slide reviews__slide--marker">
+          <p class="reviews__client-name visually-hidden">Валерия Гришаева</p>
           <p class="reviews__client-text">Первый раз пришлось оставить нашего котика
             в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует.
             И мы и котик остались очень довольны!</p>
-          <time class="reviews__review-time">15 ноября, 2019</time>
+          <time class="reviews__review-time visually-hidden">15 ноября, 2019</time>
         </li>
-        <li class="reviews__slide">
+        <li class="visually-hidden">
           <p class="reviews__client-name">Екатерина Минаева</p>
           <p class="reviews__client-text">Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</p>
           <time class="reviews__review-time">10 октября, 2019</time>
         </li>
-        <li class="reviews__slide">
+        <li class="visually-hidden">
           <p class="reviews__client-name">Павел Нечаев</p>
           <p class="reviews__client-text">Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно. </p>
           <time class="reviews__review-time">2 августа, 2019</time>
         </li>
       </ul>
 
-      <ul class="reviews__nav" aria-label="Следующая или предыдущая страница отзывов.">
+      <ul class="reviews__nav visually-hidden" aria-label="Следующая или предыдущая страница отзывов.">
         <li class="reviews__nav-item">
           <button class="reviews__nav-button" type="button" aria-label="Предыдущая страница отзывов."></button>
         </li>
@@ -217,7 +226,7 @@
 
       <ul class="reviews__dots" aria-label="Slides navigation">
         <li class="reviews__dots-item">
-          <button class="reviews__dot" type="button" aria-label="К первой странице отзывов."></button>
+          <button class="reviews__dot reviews__dot--active" type="button" aria-label="К первой странице отзывов."></button>
         </li>
         <li class="reviews__dots-item">
           <button class="reviews__dot" type="button" aria-label="Ко второй странице отзывов."></button>
@@ -229,52 +238,49 @@
     </section>
 
     <section class="contacts">
-      <div class="container">
-        <div class="contacts__wrapper-info">
-          <h2 class="contacts__title">Как нас найти</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <h3 class="contacts__item-title">Адрес</h3>
-              <p class="item-text">Санкт-Петербург,
-                ул Большая Конюшенная, д 19</p>
-            </li>
-            <li class="contacts__item">
-              <h3 class="contacts__item-title">Режим работы</h3>
-              <p class="item-text">Ежедневно, с 9:00 до 20:00</p>
-            </li>
-            <li class="contacts__item">
-              <h3 class="contacts__item-title">Телефон</h3>
-              <a href="tel:+78003335599" class="item-text">8 (800) 333-55-99</a>
-            </li>
-            <li class="contacts__item">
-              <h3 class="contacts__item-title">E-mail</h3>
-              <a href="mailto:info@cat-hotel.ru" class="item-text">info@cat-hotel.ru</a>
-            </li>
-            <li class="contacts__item">
-              <h3 class="contacts__item-title">Социальные сети</h3>
-              <ul class="social">
-                <li class="social__item">
-                  <a href="#" class="social__link">
-                    <img class="social__img" src="https://via.placeholder.com/24x24?text=соц" width="24" height="24" alt="Наша страничка на Фейсбуке">
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a href="#" class="social__link">
-                    <img class="social__img" src="https://via.placeholder.com/24x24?text=соц" width="24" height="24" alt="Наша страничка в Инстаграме">
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a href="#" class="social__link">
-                    <img class="social__img" src="https://via.placeholder.com/24x24?text=соц" width="24" height="24" alt="Наша страничка во Вконтакте">
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+      <div class="contacts__wrapper-info">
+        <h2 class="contacts__title">Как нас найти</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Адрес</h3>
+            <p class="contacts__item-text">Санкт-Петербург, ул Большая Конюшенная, д 19</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Режим работы</h3>
+            <p class="contacts__item-text">Ежедневно, с 9:00 до 20:00</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Телефон</h3>
+            <a class="contacts__item-text" href="tel:+78003335599">8 (800) 333-55-99</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">E-mail</h3>
+            <a class="contacts__item-text" href="mailto:info@cat-hotel.ru">info@cat-hotel.ru</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Социальные сети</h3>
+            <ul class="social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <img class="social__img" src="https://via.placeholder.com/24x24?text=соц" width="24" height="24" alt="Наша страничка на Фейсбуке">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <img class="social__img" src="https://via.placeholder.com/24x24?text=соц" width="24" height="24" alt="Наша страничка в Инстаграме">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <img class="social__img" src="https://via.placeholder.com/24x24?text=соц" width="24" height="24" alt="Наша страничка во Вконтакте">
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <div class="contacts__wrapper-map">
-        <img class="contacts__map" src="https://via.placeholder.com/798x580?text=Карта" width="320" height="300" alt="Наш адрес город Санкт-Петербург, улица Большая Конюшенная дом 19">
+        <img class="contacts__map" src="https://via.placeholder.com/320x300?text=Карта" width="320" height="300" alt="Наш адрес город Санкт-Петербург, улица Большая Конюшенная дом 19">
       </div>
 
     </section>
@@ -282,32 +288,30 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer__row">
-        <div class="footer__logo">
-          <a href="#" class="footer__link">
-            <img src="" alt="" class="footer__img">
-          </a>
-        </div>
-        <ul class="footer__nav">
-          <li class="footer__item">
-            <a href="#" class="footer__nav-link">Почему мы?</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__nav-link">Номера</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__nav-link">Отзывы</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__nav-link">Как нас найти</a>
-          </li>
-        </ul>
+    <div class="footer__top">
+      <div class="footer__logo">
+        <a href="#" class="footer__link">
+          <img src="img/logo.svg" alt="" class="footer__img">
+        </a>
       </div>
-      <div class="footer__row">
-        <p class="footer__copyright">2019 Все права защищены</p>
-        <a href="#" class="footer__privacy">Политика конфиденциальности</a>
-      </div>
+      <ul class="footer__nav">
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Почему мы?</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Номера</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Отзывы</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Как нас найти</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copyright">
+      <p class="footer__text-small">2019 Все права защищены</p>
+      <a href="#" class="footer__text-small">Политика конфиденциальности</a>
     </div>
   </footer>
 </body>

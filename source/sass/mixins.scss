@@ -4,6 +4,12 @@
   list-style: none;
 }
 
+@mixin btn-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 @mixin font-size-mobile-menu {
   font-weight: 500;
   font-size: 20px;

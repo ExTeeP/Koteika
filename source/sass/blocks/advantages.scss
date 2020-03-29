@@ -1,14 +1,14 @@
 .advantages {
-  padding-top: 60px;
-  background-color: $color-fourth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .advantages__title {
   @include font-size-title;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: $font-second;
 }
 
 .advantages__list {
@@ -25,6 +25,7 @@
   margin-bottom: 30px;
   padding: 25px;
   padding-top: 100px;
+  padding-right: 10px;
   position: relative;
   background-color: $color-five;
   box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -37,34 +38,36 @@
     height: 60px;
     top: 25px;
     left: 25px;
-    background-color: $color-main;
     border-radius: 50%;
+    background-color: $color-main;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }
 
-.advantages__item--icon-temp::after {
+.advantages__item--icon-temp::before {
+  background-image: url("../../img/advantages-temp.svg");
+}
 
-  }
+.advantages__item--icon-cctv::before {
+  background-image: url("../../img/advantages-cctv.svg");
+}
 
-.advantages__item--icon-cctv::after {
+.advantages__item--icon-taxi::before {
+  background-image: url("../../img/advantages-taxi.svg");
+}
 
-  }
+.advantages__item--icon-food::before {
+  background-image: url("../../img/advantages-food.svg");
+}
 
-.advantages__item--icon-taxi::after {
+.advantages__item--icon-walks::before {
+  background-image: url("../../img/advantages-walks.svg");
+}
 
-  }
-
-.advantages__item--icon-food::after {
-
-  }
-
-.advantages__item--icon-walks::after {
-
-  }
-
-.advantages__item--icon-vet::after {
-
-  }
+.advantages__item--icon-vet::before {
+  background-image: url("../../img/advantages-vet.svg");
+}
 
 .advantages__item-title {
   margin: 0;
