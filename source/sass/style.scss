@@ -1,3 +1,10 @@
-@import "../../node_modules/node-normalize-scss/_normalize.scss";
+// @import "../../node_modules/node-normalize-scss/_normalize.scss";
+@import "fonts";
 @import "variables";
+@import "mixins";
 @import "general";
+@import "blocks/btn";
+@import "blocks/header";
+@import "blocks/social";
+@import "blocks/promo";
+@import "blocks/advantages";

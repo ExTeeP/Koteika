@@ -4,105 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
   <title>Гостиница для котеек</title>
+  <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Lato-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Lato-Semibold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/rubik-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/rubik-bold.woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
 
     <div class="header__top">
-      <a class="header__link" href="">
-        <picture>
-          <img class="header__logo" src="https://via.placeholder.com/62x52?text=Лого" alt="Логотип гостиницы">
-        </picture>
-        </a>
-      <button class="header__toggle" type="button" aria-label="Открыть меню"></button> <!-- попробовать через js менять поле aria-label при переключении кнопки -->
+      <a class="header__logo-link" href="#">
+        <img class="header__logo" src="img/logo.svg" width="46" height="38" alt="Логотип гостиницы">
+      </a>
+      <button class="header__toggle header__toggle--open" type="button" aria-label="Открыть меню"></button> <!-- попробовать через js менять поле aria-label при переключении кнопки -->
     </div>
 
-    <nav class="header__main-nav">
-      <ul class="header__nav">
-        <li class="header__item">
-          <a href="#" class="header__nav-link">Почему мы?</a>
-        </li>
-        <li class="header__item">
-          <a href="#" class="header__nav-link">Номера</a>
-        </li>
-        <li class="header__item">
-          <a href="#" class="header__nav-link">Отзывы</a>
-        </li>
-        <li class="header__item">
-          <a href="#" class="header__nav-link">Как нас найти</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__wrapper visually-hidden">
+      <nav class="header__main-nav">
+        <ul class="header__nav">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Почему мы?</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Номера</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Отзывы</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Как нас найти</a>
+          </li>
+        </ul>
+      </nav>
 
-    <div class="header__contacts">
-      <a href="tel:+78003335599">8 (800) 333-55-99</a>
-      <ul class="social">
-        <li class="social__item">
-          <a href="" class="social__link">
-            <img class="social__img" src="" width="24" height="24" alt="">
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="" class="social__link">
-            <img class="social__img" src="" width="24" height="24" alt="">
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="" class="social__link">
-            <img class="social__img" src="" width="24" height="24" alt="">
-          </a>
-        </li>
-      </ul>
+      <div class="header__contacts">
+        <a class="header__tel" href="tel:+78003335599">8 (800) 333-55-99</a>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img class="social__img" src="https://via.placeholder.com/24x24?text=соц" width="24" height="24" alt="Наша страничка на Фейсбуке">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img class="social__img" src="https://via.placeholder.com/24x24?text=соц" width="24" height="24" alt="Наша страничка в Инстаграме">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img class="social__img" src="https://via.placeholder.com/24x24?text=соц" width="24" height="24" alt="Наша страничка во Вконтакте">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
   </header>
 
   <main class="page">
     <section class="promo">
-      <div class="container">
-        <p class="promo__text">Котейка</p>
-        <h1 class="promo__title">Уютная гостиница для котов и кошек</h1>
-        <p class="promo__text">Санкт-Петербург</p>
-        <button>Забронировать</button>
+      <div class="promo__wrapper">
+        <div class="promo__block-text">
+          <p class="promo__text promo__text--big">Котейка</p>
+          <p class="promo__text promo__text--medium">Уютная гостиница для котов и кошек</p>
+          <p class="promo__text promo__text--small">Санкт-Петербург</p>
+        </div>
+        <a class="btn btn--second promo__btn">Забронировать</a>
       </div>
     </section>
 
     <section class="advantages">
-      <div class="container">
-        <h2 class="advantages__title">Помему мы?</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <p class="advantages__item-title">Комфортная температура</p>
-            <p class="advantages__item-text">Во всех номерах поддерживается комфортная температура в пределах
-              23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру. </p>
-          </li>
-          <li class="advantages__item">
-            <p class="advantages__item-title">Видеонаблюдение</p>
-            <p class="advantages__item-text">Мы предоставляем доступ в нашу систему. Вы сможете следить
-              за своим питомцем со своего смартфона или компьютера.</p>
-          </li>
-          <li class="advantages__item">
-            <p class="advantages__item-title">Услуги Зоотакси</p>
-            <p class="advantages__item-text">Мы приедем за вашим питомцем в любой район Санкт-Петербурга.</p>
-          </li>
-          <li class="advantages__item">
-            <p class="advantages__item-title">Сбалансированное питание</p>
-            <p class="advantages__item-text">Вы можете привезти свой корм
-              или доверить рацион своего
-              питомца нашим профессионалам.</p>
-          </li>
-          <li class="advantages__item">
-            <p class="advantages__item-title">Ежедневные прогулки</p>
-            <p class="advantages__item-text">По вашему желанию мы выгуливаем вашего питомца два раза в день
-              на специализированной закрытой территории.</p>
-          </li>
-          <li class="advantages__item">
-            <p class="advantages__item-title">Лучшие ветеринары</p>
-            <p class="advantages__item-text">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.</p>
-          </li>
-        </ul>
-      </div>
+      <h2 class="advantages__title">Почему мы?</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--marker advantages__item--icon-temp">
+          <p class="advantages__item-title">Комфортная температура</p>
+          <p class="advantages__item-text">Во всех номерах поддерживается комфортная температура в пределах
+            23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру. </p>
+        </li>
+        <li class="advantages__item advantages__item--marker advantages__item--icon-cctv">
+          <p class="advantages__item-title">Видеонаблюдение</p>
+          <p class="advantages__item-text">Мы предоставляем доступ в нашу систему. Вы сможете следить
+            за своим питомцем со своего смартфона или компьютера.</p>
+        </li>
+        <li class="advantages__item advantages__item--marker advantages__item--icon-taxi">
+          <p class="advantages__item-title">Услуги Зоотакси</p>
+          <p class="advantages__item-text">Мы приедем за вашим питомцем в любой район Санкт-Петербурга.</p>
+        </li>
+        <li class="advantages__item advantages__item--marker advantages__item--icon-food">
+          <p class="advantages__item-title">Сбалансированное питание</p>
+          <p class="advantages__item-text">Вы можете привезти свой корм
+            или доверить рацион своего
+            питомца нашим профессионалам.</p>
+        </li>
+        <li class="advantages__item advantages__item--marker advantages__item--icon-walks">
+          <p class="advantages__item-title">Ежедневные прогулки</p>
+          <p class="advantages__item-text">По вашему желанию мы выгуливаем вашего питомца два раза в день
+            на специализированной закрытой территории.</p>
+        </li>
+        <li class="advantages__item advantages__item--marker advantages__item--icon-vet">
+          <p class="advantages__item-title">Лучшие ветеринары</p>
+          <p class="advantages__item-text">В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.</p>
+        </li>
+      </ul>
     </section>
 
     <section class="slider">
@@ -121,7 +128,7 @@
               <p class="slider__slide-text">Цена за сутки: 200₽</p>
             </li>
           </ul>
-          <button class="slider__slide-btn">Забронировать</button>
+          <button class="slider__slide-btn btn">Забронировать</button>
         </li>
         <li class="slider__slide">
           <p class="slider__slide-title">Комфорт</p>
@@ -136,7 +143,7 @@
               <p class="slider__slide-text">Цена за сутки: 250₽</p>
             </li>
           </ul>
-          <button class="slider__slide-btn">Забронировать</button>
+          <button class="slider__slide-btn btn">Забронировать</button>
         </li>
         <li class="slider__slide">
           <p class="slider__slide-title">Сьют</p>
@@ -151,7 +158,7 @@
               <p class="slider__slide-text">Цена за сутки: 350₽</p>
             </li>
           </ul>
-          <button class="slider__slide-btn">Забронировать</button>
+          <button class="slider__slide-btn btn">Забронировать</button>
         </li>
       </ul>
 
@@ -247,18 +254,18 @@
               <h3 class="contacts__item-title">Социальные сети</h3>
               <ul class="social">
                 <li class="social__item">
-                  <a href="" class="social__link">
-                    <img class="social__img" src="" width="24" height="24" alt="">
+                  <a href="#" class="social__link">
+                    <img class="social__img" src="https://via.placeholder.com/24x24?text=соц" width="24" height="24" alt="Наша страничка на Фейсбуке">
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="" class="social__link">
-                    <img class="social__img" src="" width="24" height="24" alt="">
+                  <a href="#" class="social__link">
+                    <img class="social__img" src="https://via.placeholder.com/24x24?text=соц" width="24" height="24" alt="Наша страничка в Инстаграме">
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="" class="social__link">
-                    <img class="social__img" src="" width="24" height="24" alt="">
+                  <a href="#" class="social__link">
+                    <img class="social__img" src="https://via.placeholder.com/24x24?text=соц" width="24" height="24" alt="Наша страничка во Вконтакте">
                   </a>
                 </li>
               </ul>
@@ -278,22 +285,22 @@
     <div class="container">
       <div class="footer__row">
         <div class="footer__logo">
-          <a href="" class="footer__link">
+          <a href="#" class="footer__link">
             <img src="" alt="" class="footer__img">
           </a>
         </div>
         <ul class="footer__nav">
           <li class="footer__item">
-            <a href="" class="footer__nav-link">Почему мы?</a>
+            <a href="#" class="footer__nav-link">Почему мы?</a>
           </li>
           <li class="footer__item">
-            <a href="" class="footer__nav-link">Номера</a>
+            <a href="#" class="footer__nav-link">Номера</a>
           </li>
           <li class="footer__item">
-            <a href="" class="footer__nav-link">Отзывы</a>
+            <a href="#" class="footer__nav-link">Отзывы</a>
           </li>
           <li class="footer__item">
-            <a href="" class="footer__nav-link">Как нас найти</a>
+            <a href="#" class="footer__nav-link">Как нас найти</a>
           </li>
         </ul>
       </div>

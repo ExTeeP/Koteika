@@ -1,0 +1,9 @@
+.social {
+  @include list-reset;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social__item {
+  margin-right: 20px;
+}

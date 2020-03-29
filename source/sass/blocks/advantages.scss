@@ -1,0 +1,83 @@
+.advantages {
+  padding-top: 60px;
+  background-color: $color-fourth;
+}
+
+.advantages__title {
+  @include font-size-title;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__list {
+  @include list-reset;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__item {
+  min-height: 248px;
+  margin: 0 5%;
+  margin-bottom: 30px;
+  padding: 25px;
+  padding-top: 100px;
+  position: relative;
+  background-color: $color-five;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+
+  &--marker::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 25px;
+    left: 25px;
+    background-color: $color-main;
+    border-radius: 50%;
+  }
+}
+
+.advantages__item--icon-temp::after {
+
+  }
+
+.advantages__item--icon-cctv::after {
+
+  }
+
+.advantages__item--icon-taxi::after {
+
+  }
+
+.advantages__item--icon-food::after {
+
+  }
+
+.advantages__item--icon-walks::after {
+
+  }
+
+.advantages__item--icon-vet::after {
+
+  }
+
+.advantages__item-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $font-second;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.advantages__item-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+}

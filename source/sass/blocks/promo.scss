@@ -1,0 +1,52 @@
+.promo {
+  background: linear-gradient(to bottom, #f3b560 63%, #f7bf68 73%, #f3b560 93%);
+}
+
+.promo__wrapper {
+  min-height: 457px;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../img/index-mobile-promo.jpg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.promo__block-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.promo__text {
+  margin: 0;
+  padding: 0;
+
+  &--small {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    order: -1;
+  }
+
+  &--medium {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &--big {
+    font-family: $font-second;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 52px;
+  }
+}
+
+.promo__btn {
+  margin-bottom: 10px;
+}
