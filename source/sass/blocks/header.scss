@@ -1,5 +1,13 @@
 .header {
   padding: $mobile-padding;
+
+  &--menu-open {
+    background-color: $color-main;
+  }
+
+  &--nojs {
+    background-color: $color-main;
+  }
 }
 
 .header__top {
@@ -71,4 +79,18 @@
   @include font-size-tel;
   margin-bottom: 21px;
   color: $text-color-main;
+}
+
+@media (max-width: $mobile-width-only) {
+  .header__menu {
+    display: block;
+
+    &--close {
+      display: none;
+    }
+
+    &--nojs {
+      display: block;
+    }
+  }
 }

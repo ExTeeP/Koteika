@@ -1,3 +1,12 @@
 .page {
   background-color: $color-third;
 }
+
+.page__title {
+  margin: 30px 0;
+  padding: 0 15px;
+  font-family: $font-second;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+}
